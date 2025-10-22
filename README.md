@@ -1,6 +1,7 @@
 # foxglove_json_server
 
-A lightweight UDP-to-Foxglove bridge that live-streams JSON telemetry and records it to MCAP
+A lightweight UDP-to-Foxglove bridge that live-streams JSON telemetry and records it to MCAP  
+![Litchblick Screenshot](screenshot.png)
 
 ## Features
 
@@ -20,19 +21,15 @@ foxglove_json_layout.json # Example Lichtblick dashboard layout
 
 Install ![Lichtblick](https://github.com/lichtblick-suite/lichtblick) (the opensouce foxglove-studio alternative)
 
-```bash
-pip install foxglove-websocket mcap
-python foxglove_json_server.py
-```
+Install dependencies `pip install foxglove-websocket mcap`
+
+Start the server `python foxglove_json_server.py`
 
 Then open **Lichtblick -> Add connection -> WebSocket ->** `ws://localhost:8765`.
 
 Optional: Load `foxglove_json_layout.json` in Lichtblick for instant dashboard UI.
 
-```bash
-# In another shell (sends demo JSON over UDP)
-python foxglove_json_demo.py
-```
+In another shell (sends demo JSON over UDP) `python foxglove_json_demo.py`
 
 ## Data Flow Architecture
 

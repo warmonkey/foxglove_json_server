@@ -47,7 +47,7 @@
       "diffMethod": "custom",
       "diffTopicPath": "",
       "showFullMessageForDiff": false,
-      "topicPath": "telemetry",
+      "topicPath": "tlm",
       "expansion": "none"
     },
     "Plot!gkxtyu": {
